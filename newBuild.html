@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spellforge</title>
+    <link rel="icon" type="image/x-icon" href="DSNKLGL.png">
+    <link rel="stylesheet" href="./style.css">
+    <script src="javascript _stuff.js" defer></script>
+  </head>
+  <body>
+    <div class = "menu">
+    <ul>
+        <li><a href="homeLogged.html"><img src = "DSNKLGL.png"></a></li>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="dropdown()">Spell Builds 
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="build.html">New Build</a>
+            </div>
+            </div> 
+        <li><a href="tutorial.html">Tutorial</a></li>
+        <div class="dropdown" style="float:right">
+            <button class="dropbtn2" onclick="dropdown2()">YourUsername</button>
+            <div class="dropdown-content" id="myDropdown2">
+                <a href="index.html">Sign Out</a>
+            </div>
+        </div>
+      </ul>
+    </div>
+    <div class = "b2">
+    <main>
+        <h1>Choose Your Spells</h1> 
+    </main>
+    <div class = "center">
+        <h>Class: Wizard</h>
+        <a class="class" href="build.html" style="font-size: 1em; color:black">Change</a><br>    
+    <div class="vertical-menu">
+        <h style="text-decoration: underline;">Available Spells</h>
+        <p class="spell" id="alarm" draggable="true" ondragstart="dragstartHandler(event)"  ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"> Alarm (VSM)</p>
+        <p class="spell" id="burning" draggable="true" ondragstart="dragstartHandler(event)"  ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"> Burning Hands (VS)</p>
+        <p class="spell" id="daggers" draggable="true" ondragstart="dragstartHandler(event)"  ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"> Cloud of Daggers (VSM)</p>
+        <p class="spell" id="crown" draggable="true" ondragstart="dragstartHandler(event)"  ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"> Crown of Madness(VS)</p>
+    </div>
+
+    <div class="vertical-menu">
+        <h style="text-decoration: underline;">Spell Build</h>
+        <div id='1' class="drop" draggable="true" ondragstart="dragstartHandler(event)"  ondrop="dropHandler(event)" ondragover="dragoverHandler(event)">&nbsp;</div>
+        <div id='2' class="drop" draggable="true" ondragstart="dragstartHandler(event)"  ondrop="dropHandler(event)" ondragover="dragoverHandler(event)">&nbsp;</div>
+        <div id='3' class="drop" draggable="true" ondragstart="dragstartHandler(event)"  ondrop="dropHandler(event)" ondragover="dragoverHandler(event)">&nbsp;</div>
+        <div id='4' class="drop" draggable="true" ondragstart="dragstartHandler(event)"  ondrop="dropHandler(event)" ondragover="dragoverHandler(event)">&nbsp;</div>
+    </div>
+
+    <div class="vertical-menu">
+       <h style="text-decoration: underline;">Material Components</h>
+       <div id="mat1" class="mat">-----</div>
+       <div id="mat2" class="mat">-----</div>
+       <div id="mat3" class="mat">-----</div>
+       <div id="mat4" class="mat">-----</div>
+    </div>
+
+    </div>
+
+    </div>
+
+    <div class = "footer">
+        &copy WPI HCI 2024
+    </div>
+  </body>
+</html>
